@@ -28,10 +28,12 @@ $(document).ready(function () {
     event.preventDefault();
     const numberInput = $("input#number").val();
     const name = $("input#firstName").val();
+    let numberArrayPosition = 0;
     beepBoop(numberInput, name);
     // Print each element in numberArray to the DOM
     numberArray.forEach(function (element){
-      $("div#output .col-10 ul").append("<li><span class=\"numberItem\">" + element + "</span></li>");
+      $("div#output .col-10 ul").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
+      numberArrayPosition += 1
     });
   });
 });

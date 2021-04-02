@@ -96,12 +96,19 @@ input#number {
 
 #output h3 {
   font-family: "Playfair Display", Serif;
+  font-size: 36px;
   text-align: center;
-  color: #fff;
-  margin-bottom: 30px;
+  color: #eaac33;
+  text-shadow: -2px 2px 1px #87342e;
+
 }
 
-#output p {}
+#output p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #87342e;
+
+}
 
 #output ul {
   list-style-type: none;
@@ -127,6 +134,7 @@ span.numberItem {
 
 #output ul li:nth-child(odd) span.numberItem {
   background-color: #d14738;
+  border: 1px solid #87342e;
   color: #87342e;
 }
 #output ul li:nth-child(even) span.numberItem {
