@@ -10,9 +10,11 @@ function beepBoop (number, name) {
   for (let i = 0; i <= numberInt; i += 1 ) {
     if ("3".includes(i)) {
       numberArray.push("Won't you be my neighbor?");
+    } else if ("2".includes(i)) {
+      numberArray.push("Boop");
     } else {
-      numberArray.push(i);
-    }
+    numberArray.push(i);
+    } 
   }
 }
 
