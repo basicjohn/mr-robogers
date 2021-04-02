@@ -31,7 +31,7 @@ $(document).ready(function () {
     beepBoop(numberInput, name);
     // Print each element in numberArray to the DOM
     numberArray.forEach(function (element){
-      $("div#output .col-8 ul").append("<li>" + element + "</li>");
+      $("div#output .col-12 ul").append("<li><span class=\"numberItem\">" + element + "</span></li>");
     });
   });
 });

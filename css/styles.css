@@ -42,7 +42,7 @@ h2 {
   font-family: "Playfair Display", Serif;
   text-align: center;
   font-size: 200px;
-  line-height: 120px;
+  line-height: 100px;
   color: #eaac33;
   text-shadow: -2px 2px 1px #87342e;
 }
@@ -82,12 +82,59 @@ input#number {
 #output ul {
   list-style-type: none;
   margin-left: 0px;
+  padding-left: 15px
+  padding-right: 15px
 }
 
 #output ul li {
   display: box;
   float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* #output ul li:first-child:before {
+  padding-right: 50px;
+  content: "•";
+  color: #eaac33;
+  background-color: #d14738;
+} */
+
+span.numberItem {
+  padding: 10px 15px 10px 15px;
+  margin-right: 0px;
+
+}
+
+#output ul li:nth-child(odd) span.numberItem {
+  background-color: #d14738;
+  color: #87342e;
+}
+#output ul li:nth-child(even) span.numberItem {
+  background-color: #87342e;
+  color: #d14738;
+}
+
+#output ul li span.numberItem:hover {
+  background-color: #fff;
+}
+
+#output ul:after, #output ul:before {
+  content: "•";
+  color: #eaac33;
+  background-color: #d14738;
+}
+#output ul:after {
+  top: 20px;
+  right: 20px;
+
+}
+
+#output ul:before {
+  float: left;
+  margin-left: -30px;
+
 }
 /* Footer Styles */
