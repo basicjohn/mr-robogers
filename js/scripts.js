@@ -8,12 +8,12 @@ function beepBoop (number, name) {
   numberInt = parseInt(number);
   console.log(numberInt, name);
   for (let i = 0; i <= numberInt; i += 1 ) {
-    numberArray.push(i);
-    console.log("this is the number array" + numberArray + "");
-
+    if ("3".includes(i)) {
+      numberArray.push("Won't you be my neighbor?");
+    } else {
+      numberArray.push(i);
+    }
   }
-  console.log("this is the number array" + numberArray + "");
-
 }
 
 
