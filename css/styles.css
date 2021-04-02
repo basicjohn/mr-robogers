@@ -34,8 +34,15 @@ h1 #secondLine {
   font-size: 70px;
 }
 
-hr {
+hr.darkRed {
   width: 50%;
+  border-top: 1px solid #87342e;
+}
+
+hr.gold {
+  width: 75%;
+  border-top: 1px solid #eaac33;
+  margin-bottom: 30px
 }
 
 h2 {
@@ -79,11 +86,28 @@ input#number {
 }
 
 /* Main Content: Printed numberArray  */
+#output {
+  padding-top: 50px;
+}
+
+.goldButton {
+  margin-top: 50px;
+}
+
+#output h3 {
+  font-family: "Playfair Display", Serif;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#output p {}
+
 #output ul {
   list-style-type: none;
   margin-left: 0px;
-  padding-left: 15px
-  padding-right: 15px
+  display: box;
+  height: 100%;
 }
 
 #output ul li {
@@ -93,19 +117,12 @@ input#number {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 30px;
+  margin-right: 5px;
 }
-
-/* #output ul li:first-child:before {
-  padding-right: 50px;
-  content: "•";
-  color: #eaac33;
-  background-color: #d14738;
-} */
 
 span.numberItem {
   padding: 10px 15px 10px 15px;
   margin-right: 0px;
-
 }
 
 #output ul li:nth-child(odd) span.numberItem {
@@ -121,20 +138,4 @@ span.numberItem {
   background-color: #fff;
 }
 
-#output ul:after, #output ul:before {
-  content: "•";
-  color: #eaac33;
-  background-color: #d14738;
-}
-#output ul:after {
-  top: 20px;
-  right: 20px;
-
-}
-
-#output ul:before {
-  float: left;
-  margin-left: -30px;
-
-}
 /* Footer Styles */
