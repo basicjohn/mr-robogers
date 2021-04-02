@@ -29,8 +29,10 @@ $(document).ready(function () {
     const numberInput = $("input#number").val();
     const name = $("input#firstName").val();
     beepBoop(numberInput, name);
-    $("div#output ")(numberArray);
-    
+    // Print each element in numberArray to the DOM
+    numberArray.forEach(function (element){
+      $("div#output .col-8 ul").append("<li>" + element + "</li>");
+    });
   });
 });
 
