@@ -1,22 +1,70 @@
 /* Site Wide Styles */
 body {
+  font-family: "Source Sans Pro", Sans-Serif;
+  font-size: 17px;
   background-color: #d14738;
 }
+
+h1 {
+  font-family: "Playfair Display", Serif;
+  font-size: 80px;
+  line-height: 70px;
+  text-align: center;
+}
+
 /* Header */
 
+.jumbotron {
+  background-color: transparent;
+}
+
 h1 #firstLine {
-  font-size: 80px;
-  color: #d14738;
-  -webkit-text-stroke: 2px #fff;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: -2px 2px 1px #87342e;
+  text-transform: uppercase;
 }
 
 h1 #secondLine {
-  color: #fff;
-  -webkit-text-stroke: 0px #fff;
+  color: #87342e;
+  font-family: "Source Sans Pro", Sans-Serif;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 70px;
 }
 
-/* Sidebar */
+hr {
+  width: 50%;
+}
 
-/* Main Content: Quiz Results */
+h2 {
+  font-family: "Playfair Display", Serif;
+  text-align: center;
+  font-size: 200px;
+  line-height: 200px;
+  color: #eaac33;
+}
 
+/* Form Section */
+input {
+  padding: 15px;
+}
+
+.btn.btn-dark {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Main Content: Printed numberArray  */
+#output ul { 
+  list-style-type: none;
+  margin-left: 0px;
+  }
+
+#output ul li { 
+display: box;
+float: left;
+margin-right: 15px;
+margin-bottom: 15px;
+}
 /* Footer Styles */
