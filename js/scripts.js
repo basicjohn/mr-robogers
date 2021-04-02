@@ -1,8 +1,19 @@
-// Business Logic
+// Global Variables
 
+let numberArray = []
+let numberInt;
+
+// Business Logic
 function beepBoop (number, name) {
-number = parseInt(number);
-console.log(number, name);
+  numberInt = parseInt(number);
+  console.log(numberInt, name);
+  for (let i = 0; i <= numberInt; i += 1 ) {
+    numberArray.push(i);
+    console.log("this is the number array" + numberArray + "");
+
+  }
+  console.log("this is the number array" + numberArray + "");
+
 }
 
 
@@ -13,7 +24,7 @@ $(document).ready(function () {
     const numberInput = $("input#number").val();
     const name = $("input#firstName").val();
     beepBoop(numberInput, name);
-    console.log(numberInput, name);
+    console.log(numberArray, name);
 
   });
 });
