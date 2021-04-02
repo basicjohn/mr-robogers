@@ -1,10 +1,11 @@
 // Global Variables
 let numberArray = []
-let numberInt;
 
 // Business Logic
+
+// Function to count up to input number and output differnt items for each
 function beepBoop (number, name) {
-  numberInt = parseInt(number);
+  let numberInt = parseInt(number);
   console.log(numberInt, name);
   for (let i = 0; i <= numberInt; i += 1 ) {
     let digits = [...`${i}`];
@@ -15,7 +16,7 @@ function beepBoop (number, name) {
     } else if (digits.includes("1")) {
       numberArray.push("Beep");
     } else {
-    numberArray.push(i);
+      numberArray.push(i);
     }
   }
 }
@@ -28,8 +29,8 @@ $(document).ready(function () {
     const numberInput = $("input#number").val();
     const name = $("input#firstName").val();
     beepBoop(numberInput, name);
-    console.log(numberArray);
-
+    $("div#output ")(numberArray);
+    
   });
 });
 

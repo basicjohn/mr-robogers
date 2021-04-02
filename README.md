@@ -8,7 +8,7 @@
 
 ### Git Pages Link
 
-[Mr. Robogers Neighborhood (GitHub Pages)](http://basicjohn.github.io/language-suggester)
+[Mr. Robogers Neighborhood (GitHub Pages)](http://basicjohn.github.io/mr-robogers)
 
 ## Technologies Used
 
