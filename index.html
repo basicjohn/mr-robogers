@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" 
-      type="image/png" 
-      href="/img/btn-icon.png">
+    <link rel="icon" type="image/png" href="/img/btn-icon.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -30,7 +28,7 @@
     <div class="container">
       <!-- Display of current number -->
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-xs-12col-sm-10 col-md-8 col-lg-8">
           <div class="jumbotron">
             <h1>
               <span id="firstLine">Mr. Roboger's</span><br /><span
@@ -39,65 +37,37 @@
               >
             </h1>
             <hr class="darkRed" />
-            <h2 id="currentNumber">100</h2>
+            <h2><span class="currentNumber" counter="0">#</span></h2>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
           <form id="numberForm">
             <div class="form-group">
               <input
-                type="text"
-                id="number"
-                name="number"
-                class="form-control"
-                placeholder="Random Number"
-              />
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                class="form-control"
-                placeholder="First Name"
-              />
+                type="text" id="number" name="number" class="form-control" placeholder="Random Number" />
+              <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" />
               <br />
-              <button type="button" class="btn btn-dark" id="beautiful">
+              <button type="submit" class="btn btn-dark" id="beautiful">
                 It's A Beautiful Day!
               </button>
-              <!--<br />
-              <button
-                type="button"
-                title="Will you stop, Dave?"
-                class="btn btn-success"
-                id="daisy"
-              >
-                Daisy..
-              </button>-->
             </div>
           </form>
         </div>
       </div>
       <div class="row" id="output">
-        <div class="col-1">
+        <div class="d-xs-none col-sm-1 col-md-1 col-lg-1">
           <img class="goldButton" src="../img/btn-icon.png" />
         </div>
-        <div class="col-10">
+        <div class="col-xs-12 col-sm-10 col-sm-10 col-md-10 col-lg-10">
           <hr class="gold" />
           <h3>Counting the Neighborhood</h3>
           <p>let's count the neighborhood... with a bit of a twist!</p>
-          <ul>
-            <!-- <li>0</li>
-            <li>Boop</li>
-            <li>Beep</li>
-            <li>Won't you be my neighbor, John?</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li> -->
-          </ul>
+          <ul></ul>
         </div>
-        <div class="col-1">
-          <img class="goldButton" src="../img/btn-icon.png" />
+        <div class="d-xs-none col-sm-1 col-md-1 col-lg-1">
+          <img class="goldButton float-right" src="../img/btn-icon.png" />
         </div>
       </div>
     </div>

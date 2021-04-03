@@ -30,11 +30,30 @@ $(document).ready(function () {
     const name = $("input#firstName").val();
     let numberArrayPosition = 0;
     beepBoop(numberInput, name);
+
+    const numberTicker = document.querySelector('.currentNumber');
+
     // Print each element in numberArray to the DOM
     numberArray.forEach(function (element){
-      $("div#output .col-10 ul").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
+      $("ul").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
       numberArrayPosition += 1
     });
+    // Count from 0 to the input number
+    function countUp() {
+      $('.currentNumber').animate({
+            Counter: numberInput
+        }, {
+            duration: 10000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            },
+            complete: countUp
+        });
+    };
+    countUp();
+
+
   });
 });
 
