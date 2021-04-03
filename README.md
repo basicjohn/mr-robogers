@@ -56,7 +56,9 @@ Expected Output: 0, "Beep", "Boop", "Won't you be my neighbor?"
 
 ## Known Bugs
 
-- _Mobile styles not included in the project_
+- _list items don't stack cleanly_
+- _after first submission ticker always counts from previously input value_
+- _submitting the same value twice makes ticker count down to the previsouly know value & then back up_
 
 ## License
 
