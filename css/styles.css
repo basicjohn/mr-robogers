@@ -64,9 +64,11 @@ input.form-control {
   color: #5991cb;
   text-align: center;
 }
+
 input.form-control:active {
   color: #87342e;
 }
+
 input.form-control::placeholder {
   color: #5990cb2c;
 }
@@ -136,6 +138,7 @@ span.numberItem {
   border: 1px solid #87342e;
   color: #87342e;
 }
+
 #output ul li:nth-child(even) span.numberItem {
   background-color: #87342e;
   color: #d14738;
@@ -146,7 +149,6 @@ span.numberItem {
 }
 
 /* Mobile Styles */
-
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 40px;
@@ -160,7 +162,8 @@ span.numberItem {
   .goldButton {
     display: none;
   }
+
   ul {
-  padding-inline-start: 0px;
+    padding-inline-start: 0px;
   }
 }
