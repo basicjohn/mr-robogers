@@ -36,6 +36,7 @@ h1 #secondLine {
 hr.darkRed {
   width: 50%;
   border-top: 1px solid #87342e;
+  margin-bottom: 30px;
 }
 
 hr.gold {
@@ -49,6 +50,7 @@ h2 {
   text-align: center;
   font-size: 200px;
   line-height: 120px;
+  margin-top: 50px;
   color: #eaac33;
   text-shadow: -2px 2px 1px #87342e;
 }

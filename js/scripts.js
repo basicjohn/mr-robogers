@@ -4,6 +4,7 @@ let numberArray = []
 // Business Logic
 // Function to count up to input number and output differnt items for each
 function beepBoop (number, name) {
+  numberArray = []
   let numberInt = parseInt(number);
   console.log(numberInt, name);
   for (let i = 0; i <= numberInt; i += 1 ) {
@@ -24,15 +25,19 @@ function beepBoop (number, name) {
 $(document).ready(function () {
   $("button#beautiful").click(function (event) {
     event.preventDefault();
-    const numberInput = $("input#number").val();
+    let numberInput = $("input#number").val();
     const name = $("input#firstName").val();
+    let listOutput = document.getElementById('listOutput');
     let numberArrayPosition = 0;
+    
+    while (listOutput.lastElementChild) {
+      listOutput.removeChild(listOutput.lastElementChild);
+    }
     beepBoop(numberInput, name);
-    const numberTicker = document.querySelector('.currentNumber');
 
     // Print each element in numberArray to the DOM
     numberArray.forEach(function (element){
-      $("ul").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
+      $("#listOutput").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
       numberArrayPosition += 1
     });
 
