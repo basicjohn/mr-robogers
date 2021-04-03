@@ -13,7 +13,6 @@ h1 {
 }
 
 /* Header */
-
 .jumbotron {
   background-color: transparent;
   padding-bottom: 35px;
@@ -42,7 +41,7 @@ hr.darkRed {
 hr.gold {
   width: 75%;
   border-top: 1px solid #eaac33;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -100,14 +99,12 @@ input#number {
   text-align: center;
   color: #eaac33;
   text-shadow: -2px 2px 1px #87342e;
-
 }
 
 #output p {
   text-align: center;
   margin-bottom: 30px;
   color: #87342e;
-
 }
 
 #output ul {
@@ -145,5 +142,3 @@ span.numberItem {
 #output ul li span.numberItem:hover {
   background-color: #fff;
 }
-
-/* Footer Styles */

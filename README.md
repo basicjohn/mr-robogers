@@ -23,11 +23,13 @@
 
 ## Description
 
-\_ \_
+\_ This web page is meant to take a number that was input by the user and then output the information so the user can read it back. \_
 
 ## Setup/Installation Requirements
 
-- _Desktop Web Browser_
+- Clone the repository to your desktop.
+- Navigate to the top level of the directory.
+- Open index.html in you web browser.
 
 ## Specifications
 
