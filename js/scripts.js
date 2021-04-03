@@ -2,7 +2,7 @@
 let numberArray = []
 
 // Business Logic
-// Function to count up to input number and output differnt items for each
+// count to input value & manipulate based on current value
 function beepBoop (number, name) {
   numberArray = []
   let numberInt = parseInt(number);
@@ -30,18 +30,21 @@ $(document).ready(function () {
     let listOutput = document.getElementById('listOutput');
     let numberArrayPosition = 0;
 
+    // loop to remove each of the previously input list items
     while (listOutput.lastElementChild) {
       listOutput.removeChild(listOutput.lastElementChild);
     }
+
+    // call to run business logic function
     beepBoop(numberInput, name);
 
-    // Print each element in numberArray to the DOM
+    // print each element in numberArray to the DOM
     numberArray.forEach(function (element){
       $("#listOutput").append("<li><span title=\"" + numberArrayPosition + "\" class=\"numberItem\">" + element + "</span></li>");
       numberArrayPosition += 1
     });
 
-    // Count from 0 to the input number and display it in the header
+    // count from 0 to the input number and display it in the header
     function countUp() {
       $('.currentNumber').animate({
             Counter: numberInput
