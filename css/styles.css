@@ -144,3 +144,23 @@ span.numberItem {
 #output ul li span.numberItem:hover {
   background-color: #fff;
 }
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  h1 #secondLine {
+    font-size: 40px;
+  }
+
+  .goldButton {
+    display: none;
+  }
+  ul {
+  padding-inline-start: 0px;
+  }
+}

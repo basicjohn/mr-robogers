@@ -29,7 +29,7 @@ $(document).ready(function () {
     const name = $("input#firstName").val();
     let listOutput = document.getElementById('listOutput');
     let numberArrayPosition = 0;
-    
+
     while (listOutput.lastElementChild) {
       listOutput.removeChild(listOutput.lastElementChild);
     }
@@ -46,7 +46,7 @@ $(document).ready(function () {
       $('.currentNumber').animate({
             Counter: numberInput
         }, {
-            duration: 10000,
+            duration: 5000,
             easing: 'swing',
             step: function (now) {
                 $(this).text(Math.ceil(now));
@@ -57,4 +57,3 @@ $(document).ready(function () {
     countUp();
   });
 });
-
