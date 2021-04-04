@@ -98,6 +98,8 @@ input#number {
 
 .goldButton {
   margin-top: 50px;
+  -webkit-filter: drop-shadow(0px 2px 1px #87342e);
+  filter: drop-shadow(0px 2px 1px #87342e);
 }
 
 #output h3 {
