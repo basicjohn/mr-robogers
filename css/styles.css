@@ -3,6 +3,9 @@ body {
   font-family: "Source Sans Pro", Sans-Serif;
   font-size: 17px;
   background-color: #d14738;
+  background-repeat: repeat;
+  background-image: url("../img/knitting250px.png");
+  background-blend-mode: multiply;
 }
 
 h1 {
@@ -26,7 +29,7 @@ h1 #firstLine {
 }
 
 h1 #secondLine {
-  color: #87342e;
+  color: #0000003d;
   font-family: "Source Sans Pro", Sans-Serif;
   text-transform: lowercase;
   font-weight: 800;
@@ -140,7 +143,7 @@ span.numberItem {
 }
 
 #output ul li:nth-child(even) span.numberItem {
-  background-color: #87342e;
+  background-color: #0000003d;
   color: #d14738;
 }
 
